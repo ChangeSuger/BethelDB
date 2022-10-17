@@ -24,7 +24,7 @@ var vm = new Vue({
             }
         },
         updateVueData: function(){
-            axios.get("./data/Zh/index.json").then(response => {
+            axios.get("./data/cn/index.json").then(response => {
                 for(var k in response.data){
                     this[k] = response.data[k]
                 }
