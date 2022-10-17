@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 24px;
+  font: {
+    size: 16px;
+    weight: 400;
+  };
+  // normalize the format of scroll
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: #323437;
+  }
+  &::-webkit-scrollbar-corner {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #696666;
+    background-clip: padding-box;
+    border-radius: 99px;
+    border: solid 2px rgba(0, 0, 0, 0);
+  }
+}

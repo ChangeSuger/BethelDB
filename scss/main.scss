@@ -1,0 +1,101 @@
+/* main.css */
+// main.scss
+@import 'normalize';
+@import 'components';
+
+#loading-cover {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  background-color: gray;
+}
+
+#as-background {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  position: fixed;
+  top: 0px;
+  filter: blur(0.05rem) brightness(0.85);
+  background-size: cover;
+  background-image: url(../images/bg/01.png);
+  background-color: black;
+}
+
+#as-navbar-placeholder {
+  position: fixed;
+  width: 100vw;
+  min-height: 56px;
+  background: rgba(33, 37, 41, 0.576);
+  backdrop-filter: blur(16px);
+  z-index: 100;
+  #as-nav {
+    width: 1296px;
+    height: 40px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0px;
+    #nav-logo {
+      height: 38px;
+      width: auto;
+    }
+    #nav-brand {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 5px 0;
+      white-space: nowarp;
+      #nav-accent {
+        @extend #nav-brand;
+        color: #00d9fa;
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+@mixin mainbody {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  backdrop-filter: blur(64px);
+  top: calc(58px + 1rem);
+  left: calc(50vw - 648px);
+  width: 1296px;
+}
+
+.as-home {
+  @include mainbody;
+  #{&}-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.25rem 0rem;
+    background-color: transparent;
+    .p-2 {
+      width: 50%;
+      margin: 0.25rem 0.5rem;
+      background-color: rgba(20, 20, 20, 0.75);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  #{&}-footer {
+    margin: 0.25rem 0rem;
+    background-color: transparent;
+    text-align: center;
+  }
+}
+
+.as-aurorians {
+  @include mainbody;
+}
+
+.as-items {
+  @include mainbody;
+}

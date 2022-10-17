@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alchemy Stars DB</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alchemy Star DB is a database for mobile game Alchemy Stars.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <script src="./lib/vue2/vue.js"></script>
+    <script src="./lib/vue-router/vue-router.js"></script>
+    <link rel="stylesheet" href="./lib/element-ui/index.css">
+    <script src="./lib/element-ui/index.js"></script>
+    <script src="./lib/axios/axios.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css?v=1">
+    <script src="./js/components.js"></script>
+    <script src="./js/templates.js?v=1"></script>
+
+</head>
+<body>
+    <div id="mainbody">
+        <div id="loading-cover" v-if="loading"></div>
+        <div id="as-background"></div>
+        <div id="as-content">
+            <div id="as-navbar-placeholder">
+                <nav id="as-nav">
+                    <img src="./images/logo.png" alt="" id="nav-logo">
+                    <span id="nav-brand">
+                        AlchemyStars
+                        <span id="nav-accent">DB</span>
+                    </span>
+                    <div id="nav-menu-box">
+                        <as-button v-for="mod in module_list" @click.native="changeMod(mod)" :key="mod" :value="mod" type="dark">{{ menu[mod] }}</as-button>
+                    </div>
+                </nav>
+            </div>
+            <router-view id="loaded-module"></router-view>
+        </div>
+    </div>
+
+    <script src="./js/router.js"></script>
+    <script src="./js/index.js?v=1"></script>
+</body>
+</html>

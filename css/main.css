@@ -1,0 +1,228 @@
+/* main.css */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background-color: #323437;
+}
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #696666;
+  background-clip: padding-box;
+  border-radius: 99px;
+  border: solid 2px rgba(0, 0, 0, 0);
+}
+
+.as-btn--default {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.as-btn--primary {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.as-btn--success {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.as-btn--info {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.as-btn--warning {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.as-btn--danger {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.as-btn--dark {
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+.as-btn--dark:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.as-btn--dark.active {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.is-round {
+  border-radius: 20px;
+}
+
+.is-circle {
+  widows: 40px;
+  border-radius: 20px;
+}
+
+.as-card {
+  position: relative;
+  display: block;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(33, 37, 41, 0.5764705882);
+  background-clip: border-box;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.35rem 0.5rem;
+}
+.as-card::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+#loading-cover {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  background-color: gray;
+}
+
+#as-background {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  position: fixed;
+  top: 0px;
+  filter: blur(0.05rem) brightness(0.85);
+  background-size: cover;
+  background-image: url(../images/bg/01.png);
+  background-color: black;
+}
+
+#as-navbar-placeholder {
+  position: fixed;
+  width: 100vw;
+  min-height: 56px;
+  background: rgba(33, 37, 41, 0.576);
+  backdrop-filter: blur(16px);
+  z-index: 100;
+}
+#as-navbar-placeholder #as-nav {
+  width: 1296px;
+  height: 40px;
+  margin: 0 auto;
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 0px;
+}
+#as-navbar-placeholder #as-nav #nav-logo {
+  height: 38px;
+  width: auto;
+}
+#as-navbar-placeholder #as-nav #nav-brand, #as-navbar-placeholder #as-nav #nav-brand #nav-accent {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 5px 0;
+  white-space: nowarp;
+}
+#as-navbar-placeholder #as-nav #nav-brand #nav-accent {
+  color: #00d9fa;
+  margin-right: 24px;
+}
+
+.as-home {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  backdrop-filter: blur(64px);
+  top: calc(58px + 1rem);
+  left: calc(50vw - 648px);
+  width: 1296px;
+}
+.as-home .as-home-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0.25rem 0rem;
+  background-color: transparent;
+}
+.as-home .as-home-main .p-2 {
+  width: 50%;
+  margin: 0.25rem 0.5rem;
+  background-color: rgba(20, 20, 20, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.as-home .as-home-footer {
+  margin: 0.25rem 0rem;
+  background-color: transparent;
+  text-align: center;
+}
+
+.as-aurorians {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  backdrop-filter: blur(64px);
+  top: calc(58px + 1rem);
+  left: calc(50vw - 648px);
+  width: 1296px;
+}
+
+.as-items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  backdrop-filter: blur(64px);
+  top: calc(58px + 1rem);
+  left: calc(50vw - 648px);
+  width: 1296px;
+}
+
+/*# sourceMappingURL=main.css.map */

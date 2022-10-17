@@ -1,0 +1,26 @@
+{
+    "Vice": {
+        "name": "薇丝",
+        "nickname": "往日追忆",
+        "gender": "女",
+        "height": 160,
+        "birthday": "0629",
+        "birthplace": "迦南城",
+        "Affiliation": "启光联邦",
+        "fightStyle": "长弓·凝雨、速射感知",
+        "rarity": 5,
+        "class": "狙击",
+        "element": "水",
+        "subElement": "雷",
+        "releaseDate": "20210617",
+        "charaVoice": "楠木灯",
+        "profile": "光灵简介，，，，",
+        "adventure": "她的经历，，，",
+        "story": {
+            "firts": "",
+            "second": "",
+            "third": "",
+            "forth": ""
+        }
+    }
+}
