@@ -16,7 +16,7 @@ const asHome = Vue.component("as-home", {
                 </as-card>
             </as-card>
             <as-card :diyclass="['as-home-footer']">
-                <p>Alchemy Stars DB is developed and maintained by Camille</p>
+                <p>Bethel DB is developed and maintained by Camille</p>
                 <p>Please report any issues, feedback or suggestions to me: ???</p>
                 <p>All game artwork, information and assets used in this database are the property and copyright of ???.</p>
                 <p>
