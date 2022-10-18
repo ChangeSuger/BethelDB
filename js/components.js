@@ -20,7 +20,11 @@ Vue.component("as-button", {
             type: String,
             default: "default"
         },
-        value: {
+        selected: {
+            type: String,
+            default: null,
+        },
+        name: {
             type: String,
             default: ""
         }
@@ -30,7 +34,7 @@ Vue.component("as-button", {
             return "as-btn--" + this.type
         },
         isActive: function(){
-            return this.$route.name == this.value
+            return this.selected == this.name
         }
     },
     data: function(){

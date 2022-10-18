@@ -33,51 +33,6 @@
   text-align: center;
 }
 
-.as-btn--primary {
-  cursor: pointer;
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.as-btn--success {
-  cursor: pointer;
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.as-btn--info {
-  cursor: pointer;
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.as-btn--warning {
-  cursor: pointer;
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.as-btn--danger {
-  cursor: pointer;
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 .as-btn--dark {
   cursor: pointer;
   height: 40px;
@@ -100,7 +55,7 @@
 }
 
 .is-circle {
-  widows: 40px;
+  width: 40px;
   border-radius: 20px;
 }
 

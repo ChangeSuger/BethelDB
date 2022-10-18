@@ -10,21 +10,6 @@
 .as-btn--default {
   @include as-btn;
 }
-.as-btn--primary {
-  @include as-btn;
-}
-.as-btn--success {
-  @include as-btn;
-}
-.as-btn--info {
-  @include as-btn;
-}
-.as-btn--warning {
-  @include as-btn;
-}
-.as-btn--danger {
-  @include as-btn;
-}
 .as-btn--dark {
   @include as-btn;
   color: #fff;
@@ -43,7 +28,7 @@
   border-radius: 20px;
 }
 .is-circle {
-  widows: 40px;
+  width: 40px;
   border-radius: 20px;
 }
 

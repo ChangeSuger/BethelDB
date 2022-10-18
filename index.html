@@ -33,7 +33,7 @@
                         <span id="nav-accent">DB</span>
                     </span>
                     <div id="nav-menu-box">
-                        <as-button v-for="mod in module_list" @click.native="changeMod(mod)" :key="mod" :value="mod" type="dark">{{ menu[mod] }}</as-button>
+                        <as-button v-for="mod in moduleList" @click.native="changeMod(mod)" :key="mod.name" :value="mod" type="dark">{{ menu[mod.name] }}</as-button>
                     </div>
                 </nav>
             </div>
