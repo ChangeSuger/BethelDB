@@ -21,6 +21,59 @@
             "second": "",
             "third": "",
             "forth": ""
+        },
+        "skill": {
+            "activeSkill": {
+                "name": "",
+                "Prermptive": true,
+                "CD": 3,
+                "description": ""
+            },
+            "chainCombo": {
+                "name": "",
+                "detail": {
+                    "4": "",
+                    "8": "",
+                    "12": ""
+                }
+            },
+            "workSkill": [
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "description": ""
+                }
+            ]
+        },
+        "equipment": {
+            "name": "",
+            "descrption": "",
+            "effect": {},
+            "material": {}
+        },
+        "ascension": [
+            {
+                "phase": 1,
+                "requirements": [],
+                "effet": ""
+            }
+        ],
+        "breakthrough": [
+            {
+                "enhancement": "",
+                "effect": ""
+            },
+            {
+                "enhancement": "",
+                "effect": ""
+            }
+        ],
+        "affinity": [],
+        "status": {
+
         }
     }
 }
